@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <a href="agenda.html" target="_parent" class="bcontraste"link></a>
+    <title>Document</title>
+</head>
+<body>
+    
+<p><a href="http://127.0.0.1:5500/trabalho_html/agenda.html"></a></p>
+<main>
+    <aside class="sidebar">
+        <button onclick="showSection('chat')">Contato</button>
+        <button onclick="showSection('orcamento')">Orçamento</button>
+        <button onclick="showSection('agenda')">Agenda</button>
+        <button onclick="showSection('historico')">Histórico</button>
+        <button onclick="showSection('ondeestamos')">Onde Estamos</button>
+    </aside>
+
+    <section class="content">
+        <div class="search-bar">
+            <input type="text" placeholder="Ex. Flor">
+            <button>🔍</button>
+        </div>
+
+        <div id="chat" class="section">
+            <div class="item">
+                <div class="image-placeholder" ></div>
+                <p>R$1500,00</p>
+            </div>
+            <div class="item">
+                <div class="image-placeholder"></div>
+                <p>R$1500,00</p>
+            </div>
+        </div>
+
+        
+        <div id="orcamento" class="section" style="display: none;">
+            <h2>Orçamento</h2>
+            <p>Solicite um orçamento conosco.</p>
+        </div>
+        <div id="agenda" class="section" style="display: none;">
+            <h2>Agenda</h2>
+            <p>Confira nossa agenda de compromissos.</p>
+        </div>
+        <div id="historico" class="section" style="display: none;">
+            <h2>Histórico</h2>
+            <p>Veja seu histórico de interações.</p>
+        </div>
+        <div id="ondeestamos" class="section" style="display: none;">
+            <h2>Onde Estamos</h2>
+            <p>Encontre nossa localização e dados de contato.</p>
+        </div>
+    </section>
+</main>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        document.getElementById(sectionId).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

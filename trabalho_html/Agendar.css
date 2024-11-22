@@ -1,0 +1,120 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+  
+.navbar {
+    background-color: #050404;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar input {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.appointment-container {
+    display: flex;
+    gap: 20px;
+}
+
+.model-info {
+    border: 1px solid #835858;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+calendar-container {
+    width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 10px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day-header, .calendar-day {
+    border-style: groove;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.calendar-day.available {
+    background-color: #e0ffe0;
+    cursor: pointer;
+}
+
+.calendar-day.unavailable {
+    background-color: #ffe0e0;
+    text-decoration: line-through;
+}
+
+.btn-payment {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-payment:hover {
+    background-color: #45a049;
+}
+
+h2{
+background: #ffffff;
+border: #000000;
+border-style: groove;
+}
+.day-name, .day {
+    padding: 10px;
+    text-align: center;
+}
+.day-name, .day {
+    padding: 10px;
+    text-align: center;
+}
+.day {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.day:hover {
+    background-color: #ffffff;
+}
+
+
+
